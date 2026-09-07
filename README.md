@@ -1,4 +1,4 @@
-# EdTech Q&A System using RAG & Google Gemini 🧠🌱
+# Q&A System using RAG & Google Gemini 🧠🌱
 
 ## 📌 Project Overview
 An intelligent Question & Answering system designed to provide accurate responses based on a specific knowledge base (CSV). It uses **RAG (Retrieval-Augmented Generation)** to ensure the LLM (Google Gemini) provides factual answers grounded in the provided context, avoiding hallucinations.
