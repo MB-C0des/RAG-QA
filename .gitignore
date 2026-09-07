@@ -1,0 +1,19 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Local vector database
+FAISS_index/
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
