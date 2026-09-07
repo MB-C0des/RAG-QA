@@ -7,10 +7,16 @@ st.set_page_config(
 
 st.title("RestoRec 🌱")
 
+
+# ---------------------------------------------------------
+# Import LangChain helper functions
+# ---------------------------------------------------------
+
 try:
     from Langchain_helper import (
         Create_combined_vector_DB,
-        get_QA_Chain
+        get_QA_Chain,
+        get_retrieved_documents
     )
 
 except Exception as e:
@@ -20,7 +26,7 @@ except Exception as e:
 
 
 # ---------------------------------------------------------
-# Create knowledge base
+# Create Knowledge Base
 # ---------------------------------------------------------
 
 if st.button("Create Knowledge Base"):
@@ -41,16 +47,17 @@ if st.button("Create Knowledge Base"):
     except Exception as e:
 
         st.error("Failed to create knowledge base.")
+
         st.exception(e)
 
 
 # ---------------------------------------------------------
-# Question
+# Question input
 # ---------------------------------------------------------
 
 question = st.text_input(
     "Question:",
-    placeholder="e.g. Recommend an Indian restaurant near East Croydon"
+    placeholder="e.g. Recommend an Indian restaurant in Croydon"
 )
 
 
@@ -64,13 +71,65 @@ if question:
 
         with st.spinner("Searching knowledge base..."):
 
+            # Build the RAG chain
             chain = get_QA_Chain()
 
+            # Ask the question
             response = chain.invoke(question)
+
+            # Also retrieve the actual documents
+            # so we can inspect what FAISS found
+            retrieved_docs = get_retrieved_documents(
+                question,
+                k=15
+            )
+
+        # -------------------------------------------------
+        # Display answer
+        # -------------------------------------------------
 
         st.header("Answer")
 
         st.write(response)
+
+
+        # -------------------------------------------------
+        # Display retrieved evidence
+        # -------------------------------------------------
+
+        with st.expander(
+            "View documents retrieved from FAISS"
+        ):
+
+            st.write(
+                f"FAISS retrieved "
+                f"{len(retrieved_docs)} documents."
+            )
+
+            for number, doc in enumerate(
+                retrieved_docs,
+                start=1
+            ):
+
+                source = doc.metadata.get(
+                    "knowledge_source",
+                    "unknown"
+                )
+
+                st.markdown(
+                    f"### Document {number}"
+                )
+
+                st.write(
+                    f"**Source:** {source}"
+                )
+
+                st.text(
+                    doc.page_content
+                )
+
+                st.divider()
+
 
     except Exception as e:
 

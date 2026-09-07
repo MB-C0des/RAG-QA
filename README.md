@@ -24,13 +24,10 @@ An intelligent Question & Answering system designed to provide accurate response
 3. Install dependencies:
    `pip install -r requirements.txt`
 4. Run the Streamlit app:
-   `streamlit run main.py`
-
+   ``
+streamlit run main.py
 ## 📂 Project Structure
 * `main.py`: Streamlit frontend logic.
 * `Langchain_helper.py`: Backend logic for RAG, vector DB, and chain creation.
-* `codebasics_faqs.csv`: The knowledge base (source data).
+* `csv`: The knowledge base (source data).
 
-## 👨‍💻 Author
-**Abdelrahman Elderaa** - AI Engineer
-* **LinkedIn:** [Abdelrahman Elderaa](http://linkedin.com/in/abdelrahman-elderaa-405b7b244)
