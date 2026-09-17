@@ -1,0 +1,25 @@
+﻿question,method,precision_at_k,recall_at_k,reciprocal_rank,ndcg_at_k,average_time_ms,retrieved_ids
+Where can I get Nigerian food in Croydon?,Dense,,,,,52.38156933167678,TikTok:528;TikTok:335;TikTok:558;Reddit:24;Reddit:14;Places:492;Places:487;Places:1049
+Where can I get Nigerian food in Croydon?,BM25,,,,,24.698569331424853,TikTok:282;TikTok:157;TikTok:209;Reddit:12;Reddit:24;Places:181;Places:1039;Places:149
+Where can I get Nigerian food in Croydon?,Hybrid,,,,,54.370611001407575,TikTok:528;TikTok:282;TikTok:559;Reddit:24;Reddit:21;Places:181;Places:492;Places:487
+Recommend an affordable restaurant near East Croydon.,Dense,,,,,67.36551366824035,TikTok:470;TikTok:2;TikTok:139;Reddit:10;Reddit:24;Places:699;Places:300;Places:958
+Recommend an affordable restaurant near East Croydon.,BM25,,,,,6.2565700003081774,TikTok:2;TikTok:126;TikTok:814;Reddit:14;Reddit:10;Places:908;Places:877;Places:264
+Recommend an affordable restaurant near East Croydon.,Hybrid,,,,,63.02390299970284,TikTok:2;TikTok:628;TikTok:470;Reddit:10;Reddit:18;Places:699;Places:300;Places:958
+Where can I get burgers in Croydon?,Dense,0.625,0.7142857142857143,1.0,0.7245561880513816,38.01234699858469,TikTok:822;TikTok:574;TikTok:2;Reddit:10;Reddit:8;Places:717;Places:509;Places:299
+Where can I get burgers in Croydon?,BM25,0.25,0.2857142857142857,0.16666666666666666,0.18462675384408755,5.597527667608422,TikTok:157;TikTok:209;TikTok:617;Reddit:12;Reddit:5;Places:107;Places:799;Places:309
+Where can I get burgers in Croydon?,Hybrid,0.625,0.7142857142857143,1.0,0.7245561880513816,55.00116633265861,TikTok:822;TikTok:574;TikTok:2;Reddit:10;Reddit:24;Places:107;Places:717;Places:509
+Recommend somewhere suitable for a date night.,Dense,,,,,43.43431933254275,TikTok:457;TikTok:458;TikTok:294;Reddit:25;Reddit:24;Places:623;Places:427;Places:1002
+Recommend somewhere suitable for a date night.,BM25,,,,,5.074708333268063,TikTok:341;TikTok:458;TikTok:727;Reddit:25;Reddit:14;Places:434;Places:491;Places:793
+Recommend somewhere suitable for a date night.,Hybrid,,,,,50.9165416660835,TikTok:458;TikTok:628;TikTok:457;Reddit:25;Reddit:21;Places:434;Places:165;Places:623
+Which restaurants have vegetarian options?,Dense,,,,,42.26451366654752,TikTok:528;TikTok:320;TikTok:574;Reddit:24;Reddit:18;Places:558;Places:995;Places:250
+Which restaurants have vegetarian options?,BM25,,,,,3.8031389995012432,TikTok:630;TikTok:487;TikTok:28;Reddit:22;Reddit:14;Places:490;Places:1;Places:1084
+Which restaurants have vegetarian options?,Hybrid,,,,,45.0318336673566,TikTok:528;TikTok:320;TikTok:574;Reddit:14;Reddit:18;Places:558;Places:995;Places:250
+Where can I find halal food in Croydon?,Dense,,,,,48.04990266590418,TikTok:139;TikTok:349;TikTok:335;Reddit:24;Reddit:21;Places:1049;Places:718;Places:1055
+Where can I find halal food in Croydon?,BM25,,,,,6.090125001113241,TikTok:282;TikTok:559;TikTok:617;Reddit:24;Reddit:21;Places:983;Places:1039;Places:319
+Where can I find halal food in Croydon?,Hybrid,,,,,69.55143033216397,TikTok:282;TikTok:528;TikTok:559;Reddit:24;Reddit:21;Places:1049;Places:718;Places:1055
+What restaurants are recommended by Reddit users?,Dense,,,,,43.46937499940395,TikTok:528;TikTok:574;TikTok:282;Reddit:18;Reddit:25;Places:446;Places:583;Places:443
+What restaurants are recommended by Reddit users?,BM25,,,,,5.117361331940629,TikTok:830;TikTok:209;TikTok:567;Reddit:4;Reddit:5;Places:259;Places:76;Places:348
+What restaurants are recommended by Reddit users?,Hybrid,,,,,76.23102766592638,TikTok:528;TikTok:574;TikTok:282;Reddit:18;Reddit:4;Places:41;Places:446;Places:583
+Which restaurants are popular on TikTok?,Dense,,,,,62.672791666651996,TikTok:528;TikTok:614;TikTok:574;Reddit:18;Reddit:11;Places:896;Places:864;Places:246
+Which restaurants are popular on TikTok?,BM25,,,,,4.143166668654885,TikTok:630;TikTok:487;TikTok:539;Reddit:22;Reddit:16;Places:259;Places:749;Places:319
+Which restaurants are popular on TikTok?,Hybrid,,,,,47.48609700012215,TikTok:528;TikTok:614;TikTok:574;Reddit:18;Reddit:16;Places:896;Places:864;Places:246

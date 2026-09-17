@@ -14,7 +14,7 @@ An intelligent Question & Answering system designed to provide accurate response
 ## 🏗️ Architecture & Features
 * **Vector Store Creation:** Converts FAQ data into vector embeddings and stores them locally using FAISS for fast similarity search.
 * **RAG Pipeline:** When a user asks a question, the system retrieves the most relevant context from the vector database and passes it to Gemini Pro.
-* **Custom Prompting:** Uses a specialized `PromptTemplate` to ensure the model stays within the context and answers "I don't know" if the information is missing.
+* **Custom Prompting:** Uses a specialized `PromptTemplate` to ensure the model stays within the context and answers "I do not know" if the information is missing.
 * **User Interface:** A clean Streamlit web app for real-time interaction.
 
 ## 🚀 How to Run
@@ -24,10 +24,17 @@ An intelligent Question & Answering system designed to provide accurate response
 3. Install dependencies:
    `pip install -r requirements.txt`
 4. Run the Streamlit app:
-   ``
-streamlit run main.py
+   ```
+   streamlit run main.py
+
+## 📋 Running tests
+* To run the basic unit and integration tests, use command `pytest` or `python -m pytest`
+* To run all tests including functional tests, use command `GOOGLE_API_KEY=your_key pytest` where `your_key` is your API key for Google Gemini Plus
+
+   ```
+
 ## 📂 Project Structure
 * `main.py`: Streamlit frontend logic.
-* `Langchain_helper.py`: Backend logic for RAG, vector DB, and chain creation.
-* `csv`: The knowledge base (source data).
+* `rag.py`: Backend logic for RAG, vector DB, and chain creation.
+* `data/`: The knowledge base source data (`tiktok.csv`, `reddit.csv`, `places.csv`).
 
